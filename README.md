@@ -35,6 +35,6 @@ As seguintes ferramentas e tecnologias foram usadas na construção do projeto:
 
 ---
 
-## ✍️ Autor
+## Autor
 
 Feito por **[José Fernando Avelino e João Pedro Holanda]**
