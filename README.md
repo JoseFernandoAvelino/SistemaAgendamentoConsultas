@@ -13,7 +13,7 @@ O sistema foi pensado para funcionar com três perfis de usuários:
 #### Paciente
 - **Agendar Consulta:** Marcar uma nova consulta com um médico disponível.
 - **Cancelar Consulta:** Cancelar um agendamento existente.
-- **Consultar Histórico:** Visualizar o histórico de consultas passadas e futuras.
+- **Visualizar Consultas:** Visualizar as consultas futuras.
 
 #### Recepcionista
 - **Cadastrar Paciente:** Adicionar novos pacientes ao sistema.
@@ -21,8 +21,8 @@ O sistema foi pensado para funcionar com três perfis de usuários:
 - **Cancelar Consulta:** Efetuar o cancelamento de agendamentos.
 
 #### Médico
-- **Visualizar Agenda:** Consultar a agenda de consultas por dia ou semana.
-- **Gerenciar Disponibilidade:** Definir os horários em que está disponível para atendimento.
+- **Visualizar Agenda:** Consultar a agenda de consultas futuras.
+- **Gerenciar Disponibilidade:** Definir os dias e horários em que está disponível para atendimento.
 
 ---
 
