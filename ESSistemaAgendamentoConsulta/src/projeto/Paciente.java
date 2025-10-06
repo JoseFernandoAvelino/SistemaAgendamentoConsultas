@@ -74,11 +74,14 @@ public class Paciente {
 		return Objects.hash(id);
 	}
 
-	@Override
-	public String toString() {
-		return "Paciente{" +
-				"id=" + id +
-				", nome='" + nome + '\'' +
-				'}';
-	}
+    @Override
+    public String toString() {
+        return "Paciente{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", cpf='" + cpf + '\'' +
+                ", dataNascimento=" + dataNascimento +
+                ", telefone='" + telefone + '\'' +
+                '}';
+    }
 }
