@@ -1,4 +1,4 @@
-package projeto;
+package projeto.model;
 
 public enum StatusConsulta {
     AGENDADA,

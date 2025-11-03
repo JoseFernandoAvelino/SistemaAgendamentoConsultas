@@ -1,4 +1,4 @@
-package projeto;
+package projeto.model;
 
 import java.util.Objects;
 
@@ -6,16 +6,20 @@ public class Medico {
 	private Long id;
 	private String nome;
 	private String crm;
-	private Especialidade especialidade; 	
+	private Especialidade especialidade;
+	private String email;
+	private String senha;
 	
 	public Medico() {
 	}
 	
-	public Medico(Long id, String nome, String crm, Especialidade especialidade) {
+	public Medico(Long id, String nome, String crm, Especialidade especialidade, String email, String senha) {
 		this.id = id;
 		this.nome = nome;
 		this.crm = crm;
 		this.especialidade = especialidade;
+		this.email = email;
+	    this.senha = senha;
 	}
 	
 	public Long getId() {
@@ -48,6 +52,14 @@ public class Medico {
 	
 	public void setEspecialidade(Especialidade especialidade) {
 		this.especialidade = especialidade;
+	}
+	
+	public String getEmail() {
+		return email; 
+	}
+	
+	public String getSenha() {
+		return senha; 
 	}
 
 	@Override

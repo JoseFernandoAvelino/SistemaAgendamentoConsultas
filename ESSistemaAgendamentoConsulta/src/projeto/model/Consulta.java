@@ -1,4 +1,4 @@
-package projeto;
+package projeto.model;
 
 import java.time.LocalDateTime;
 import java.util.Objects;

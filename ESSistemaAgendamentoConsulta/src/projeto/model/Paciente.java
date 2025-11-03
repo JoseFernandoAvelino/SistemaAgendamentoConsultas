@@ -1,4 +1,4 @@
-package projeto;
+package projeto.model;
 
 import java.time.LocalDate;
 import java.util.Objects;
@@ -9,16 +9,20 @@ public class Paciente {
 	private String cpf;
 	private LocalDate dataNascimento;
 	private String telefone;
+	private String email;
+	private String senha;
 	
 	public Paciente() {
 	}
 	
-	public Paciente(Long id, String nome, String cpf, LocalDate dataNascimento, String telefone) {
+	public Paciente(Long id, String nome, String cpf, LocalDate dataNascimento, String telefone, String email, String senha) {
 		this.id = id;
 		this.nome = nome;
 		this.cpf = cpf;
 		this.dataNascimento = dataNascimento;
 		this.telefone = telefone;
+		this.email = email;
+	    this.senha = senha;
 	}
 	
 	public Long getId() {
@@ -59,6 +63,14 @@ public class Paciente {
 	
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
+	}
+	
+	public String getEmail() {
+		return email; 
+	}
+	
+	public String getSenha() {
+		return senha; 
 	}
 
 	@Override

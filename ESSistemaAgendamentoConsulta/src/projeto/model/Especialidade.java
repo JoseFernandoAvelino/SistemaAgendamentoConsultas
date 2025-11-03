@@ -1,4 +1,4 @@
-package projeto;
+package projeto.model;
 
 import java.util.Objects;
 
@@ -6,9 +6,7 @@ public class Especialidade {
 	private Long id;
 	private String nome;
 	
-	
-	public Especialidade() {
-		
+	public Especialidade() {		
 	}
 	
 	public Especialidade(Long id, String nome) {
