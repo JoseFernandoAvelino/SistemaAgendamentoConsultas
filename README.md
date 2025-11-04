@@ -22,7 +22,6 @@ Recepcionista
 
 Médico
 - **Visualizar Agenda:** Consultar a agenda de consultas futuras.
-- **Gerenciar Disponibilidade:** Definir os dias e horários em que está disponível para atendimento.
 
 ---
 
