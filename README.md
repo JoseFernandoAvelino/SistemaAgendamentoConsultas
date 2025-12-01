@@ -1,39 +1,54 @@
-Sistema de Agendamento de Consultas
+# Sistema de Agendamento de Consultas
 
-Sobre o Projeto
-
-Este projeto é um sistema de agendamento de consultas médicas desenvolvido em Java. O objetivo é criar uma plataforma simples e eficiente que permita a pacientes marcarem consultas, médicos gerenciarem suas agendas e recepcionistas administrarem o fluxo de cadastros e agendamentos.
+## Sobre o Projeto
+Este projeto é um sistema de agendamento de consultas médicas desenvolvido em **Java** para rodar no terminal (Console). 
+O sistema foi construído utilizando a arquitetura **MVC (Model-View-Controller)** para organização do código e possui controle de acesso via login.
 
 ---
 
-Funcionalidades Principais
+## Funcionalidades Principais
 
-O sistema foi pensado para funcionar com três perfis de usuários:
+O sistema exige autenticação e apresenta opções diferentes para cada perfil:
 
-Paciente
-- **Agendar Consulta:** Marcar uma nova consulta com um médico disponível.
-- **Cancelar Consulta:** Cancelar um agendamento existente.
-- **Visualizar Consultas:** Visualizar as consultas futuras.
+### Paciente
+- **Agendar Consulta:** Marcar uma nova consulta (o sistema valida o horário comercial: 08:00 às 18:00).
+- **Cancelar Consulta:** Cancelar seus próprios agendamentos.
+- **Visualizar Histórico:** Visualizar suas consultas agendadas.
 
-Recepcionista
+### Recepcionista
 - **Cadastrar Paciente:** Adicionar novos pacientes ao sistema.
-- **Agendar Consulta:** Marcar consultas para os pacientes.
-- **Cancelar Consulta:** Efetuar o cancelamento de agendamentos.
+- **Agendar Consulta:** Marcar consultas para qualquer paciente.
+- **Cancelar Consulta:** Permissão administrativa para cancelar qualquer agendamento.
 
-Médico
-- **Visualizar Agenda:** Consultar a agenda de consultas futuras.
+### Médico
+- **Visualizar Agenda:** Consultar a lista de atendimentos marcados.
 
 ---
 
-Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
-As seguintes ferramentas e tecnologias foram usadas na construção do projeto:
+As seguintes ferramentas e conceitos foram usados na construção do projeto:
 
 - **Linguagem:** Java 17+
-- **Banco de Dados:** (A ser definido)
+- **Arquitetura:** MVC (Model-View-Controller)
+- **Persistência:** Em memória (Simulação de Banco de Dados usando `HashMap`).
 
 ---
 
-Autor
+## Como Rodar e Testar
 
-Feito por **[José Fernando Avelino e João Pedro Holanda]**
+1. Importe o projeto na sua IDE.
+2. Execute o arquivo `Main.java`.
+3. Para facilitar os testes, o sistema já inicia com usuários cadastrados. Use as credenciais abaixo:
+
+| Perfil | Email (Login) | Senha |
+| :--- | :--- | :--- |
+| **Paciente** | p | 1 |
+| **Médico** | m | 1 |
+| **Recepcionista** | r | 1 |
+
+---
+
+## Autores
+
+Feito por **José Fernando Avelino e João Pedro Holanda**
